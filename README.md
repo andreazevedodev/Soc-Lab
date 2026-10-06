@@ -37,6 +37,6 @@ Demonstrar o fluxo de detecção e resposta a incidentes *End-to-End*:
 1. **Simulação de Ataque:** Disparo usando Hydra contra a porta 22 da vítima.
 ![Ataque Hydra](images/hydra_attack.png)
 2. **Detecção no SIEM:** Painel do Wazuh mostrando o alerta da Regra `5763` (SSHD brute force).
-![Alerta no IRIS](images/alert.png)
+![Logs do Wazuh](images/logs.png)
 3. **Caso Criado no IRIS:** Painel do DFIR IRIS exibindo o incidente criado automaticamente via API.
 ![Alerta no IRIS](images/alert.png)
