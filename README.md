@@ -4,7 +4,7 @@ Este repositório contém a documentação técnica, scripts de automação e gu
 
 ---
 
-## 🎯 Objetivo do Laboratório
+##  Objetivo do Laboratório
 
 Demonstrar o fluxo de detecção e resposta a incidentes *End-to-End*:
 1. Simulação de ataque de força bruta SSH via **Hydra**.
@@ -25,15 +25,18 @@ Demonstrar o fluxo de detecção e resposta a incidentes *End-to-End*:
 
 ---
 
-## ⚡ Desafios de Engenharia & Soluções Aplicadas
+##  Desafios & Soluções Aplicadas
 
 * **Problema:** Condição de corrida no boot do Linux onde o agente Wazuh iniciava antes da interface de rede estar 100% pronta, falhando o registro no servidor.
 * **Solução:** Script de inicialização customizado em `/etc/rc.local` validando a conectividade com o gateway antes de subir o serviço `wazuh-agent`.
 
 ---
 
-## 📊 Evidências de Funcionamento
+##  Evidências de Funcionamento
 
 1. **Simulação de Ataque:** Disparo usando Hydra contra a porta 22 da vítima.
+![Ataque Hydra](images/hydra_attack.png)
 2. **Detecção no SIEM:** Painel do Wazuh mostrando o alerta da Regra `5763` (SSHD brute force).
+![Alerta no IRIS](images/alert.png)
 3. **Caso Criado no IRIS:** Painel do DFIR IRIS exibindo o incidente criado automaticamente via API.
+![Alerta no IRIS](images/alert.png)
