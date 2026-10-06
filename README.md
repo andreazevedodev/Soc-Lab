@@ -14,7 +14,7 @@ Demonstrar o fluxo de detecção e resposta a incidentes *End-to-End*:
 
 ---
 
-## 🏗️ Arquitetura do Ambiente
+##  Arquitetura do Ambiente
 
 | Ativo / VM | Função | Sistema Operacional |
 | :--- | :--- | :--- |
@@ -40,3 +40,6 @@ Demonstrar o fluxo de detecção e resposta a incidentes *End-to-End*:
 ![Logs do Wazuh](images/logs.png)
 3. **Caso Criado no IRIS:** Painel do DFIR IRIS exibindo o incidente criado automaticamente via API.
 ![Alerta no IRIS](images/alert.png)
+
+---
+ **Documentação Completa:** Para ver o relatório detalhado de construção e notas de estudo no Notion, [clique aqui](https://app.notion.com/p/Montagem-do-Laborat-rio-Virtual-de-An-lise-de-SOC-0dec1b142f51490b9792e5a041bc614c?source=copy_link).
